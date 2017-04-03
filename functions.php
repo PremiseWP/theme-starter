@@ -1,10 +1,8 @@
-<?php 
+<?php
 /**
- * Functions Library 
+ * Functions Library
  *
  * Theme Prefix: 'themeprefix_'
- *
- * @package [level 1]\[level 2]\[etc.]
  */
 
 
@@ -15,13 +13,13 @@ if ( ! class_exists( 'Premise_WP' ) ) {
 }
 
 
-// setup theme 
+// setup theme
 if ( ! function_exists( 'themeprefix_theme_setup' ) ) {
 	/**
 	 * Setup the theme once it is activated.
 	 *
 	 * This function runs only once when you activate the theme. It performs tasks that should NOT be ran on every page load such as flushing rewrite rules.
-	 * 
+	 *
 	 * @return void
 	 */
 	function themeprefix_theme_setup() {
@@ -56,11 +54,11 @@ if ( function_exists( 'add_theme_support' ) ) {
 
 
 
-// Enqueue styles and scripts 
+// Enqueue styles and scripts
 if ( ! function_exists( 'themeprefix_enqueue_scripts' ) ) {
 	/**
 	 * Enqueue theme scripts in the front end
-	 * 
+	 *
 	 * @return void
 	 */
 	function themeprefix_enqueue_scripts() {
@@ -77,7 +75,7 @@ if ( ! function_exists( 'themeprefix_enqueue_scripts' ) ) {
 
 
 
-// output the main nav 
+// output the main nav
 if ( ! function_exists( 'themeprefix_main_nav' ) ) {
 	/**
 	 * Main navigation
@@ -110,7 +108,7 @@ if ( ! function_exists( 'themeprefix_main_nav' ) ) {
 
 
 
-// Register menu locations 
+// Register menu locations
 if ( ! function_exists( 'themeprefix_register_menu' ) ) {
 	/**
 	 * Register theme menu location
@@ -120,7 +118,7 @@ if ( ! function_exists( 'themeprefix_register_menu' ) ) {
 	function themeprefix_register_menu() {
 
 		register_nav_menus(
-			array( 
+			array(
 				'header-menu' => __( 'Header Menu', '' ), // Main Navigation.
 			)
 		);

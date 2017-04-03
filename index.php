@@ -1,8 +1,6 @@
-<?php 
+<?php
 /**
  * Home / Blog Page Template
- *
- * @package [level 1]\[level 2]\[etc.]
  */
 
 get_header();
@@ -10,10 +8,10 @@ get_header();
 ?>
 
 <section id="">
-	
+
 	<div class="container">
-		
-		<?php 
+
+		<?php
 		/**
 		 * The loop. Check if we have posts and display them.
 		 */
